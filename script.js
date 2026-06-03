@@ -62,3 +62,23 @@ function deleteTask(index){
 function saveTasks(){
     localStorage.setItem("tasks", JSON.stringify(tasks));
 }
+
+/* REGISTRO DEL SERVICE WORKER */
+
+if ("serviceWorker" in navigator) {
+
+    window.addEventListener("load", () => {
+
+        navigator.serviceWorker.register("./service-worker.js")
+
+        .then(() => {
+            console.log("Service Worker registrado");
+        })
+
+        .catch(err => {
+            console.log("Error:", err);
+        });
+
+    });
+
+}

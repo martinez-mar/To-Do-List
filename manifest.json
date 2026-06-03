@@ -1,0 +1,22 @@
+{
+  "name": "To Do List",
+  "short_name": "ToDo",
+  "description": "Aplicación de lista de tareas",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "gato192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "gato512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
